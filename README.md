@@ -5,8 +5,26 @@ Generated on 2018-04-23 using
 
 ## Description
 
-This is an example readme file.
-Describe your site/app here.
+This is a development exercise for Loop11
+
+Structure
+```
+└── src
+    └── _styles
+        └── app (contains application styling)
+    └── _scripts
+        └── app (contains angularjs application code)
+		
+    └── index.jade (index file of the app)
+```
+Installation:
+npm install
+
+Run app
+gulp serve
+
+URL
+http://localhost:3000/
 
 ## Technologies used
 
