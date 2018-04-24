@@ -1,0 +1,36 @@
+a{
+	color: #FFF;
+	text-decoration: none;
+}
+
+.container{
+	max-width: 700px;
+	margin: auto;
+	padding: 10px;
+}
+.loader{
+	text-align: center;
+	margin-top: 4.5em;
+}
+.row{
+	display: flex;
+	&:after{
+		display: table;
+	}
+	&:before{
+		display: table;
+	}
+}
+.half{
+	width: 50%;
+}
+
+footer{
+	p{
+		text-align: center;
+		font-size: .8em;
+		text-transform: uppercase;
+		color: rgba(255,255,255, .8);	
+	}
+
+}

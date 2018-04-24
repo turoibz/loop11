@@ -1,0 +1,32 @@
+// Normalize Styles
+@import 'node_modules/normalize.css/normalize';
+
+// Import Modules
+@import '_mixins';
+@import '_fonts';
+@import '_base';
+@import '_tab_nav';
+@import '_weather';
+@import '_forecast';
+
+// Box sizing partial styles:
+// Apply a natural box layout model to all elements
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html{
+	background: #121212;
+	background: linear-gradient(to bottom, #121212, #000);
+	min-height: 100%;
+}
+body{
+	height: 100%;
+	font-size: 16px;
+	color: #FFF;
+	font-family: 'Montserrat', sans-serif;
+}

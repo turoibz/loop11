@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900');
+@import '_animations';
+
+@font-face {
+	font-family: 'icomoon';
+	src:  url('../fonts/icomoon/icomoon.eot?ecwfzn');
+	src:  url('../fonts/icomoon/icomoon.eot?ecwfzn#iefix') format('embedded-opentype'),
+	url('../fonts/icomoon/icomoon.ttf?ecwfzn') format('truetype'),
+	url('../fonts/icomoon/icomoon.woff?ecwfzn') format('woff'),
+	url('../fonts/icomoon/icomoon.svg?ecwfzn#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon_"]:before, [class*=" icon_"]:before, [class^="icon_"]:after, [class*=" icon_"]:after{
+	font-family: "icomoon";
+	font-style:normal;
+	font-weight: normal;
+	text-transform: none;
+	line-height: 1;
+	margin-bottom: 5px;
+	display: block;
+}
+
+.icon_sunrise:before {
+	content: "\e900";
+}
+.icon_sunny:before {
+	content: "\e901";
+}
+.icon_clear:before {
+	content: "\e902";
+}
+.icon_cloudy:before {
+ 	content: "\e907";
+}
+.icon_heavyrainswrsday:before {
+ 	content: "\e907";
+}
+.icon_heavysleetswrsday:before {
+ 	content: "\e907";
+}
+.icon_partcloudrainthunderday:before {
+ 	content: "\e907";
+}
+.icon_partcloudsleetsnowthunderday:before {
+ 	content: "\e907";
+}
+.icon_partlycloudyday:before {
+ 	content: "\e907";
+}
+.icon_heavyrainswrsnight:before {
+ 	content: "\e908";
+}
+.icon_heavysleetswrsnight:before {
+ 	content: "\e908";
+}
+.icon_partcloudrainthundernight:before {
+ 	content: "\e908";
+}
+.icon_partcloudsleetsnowthundernight:before {
+ 	content: "\e908";
+}
+.icon_partlycloudynight:before {
+ 	content: "\e908";
+}
+.icon_fog:before {
+ 	content: "\e90b";
+}
+.icon_freezingfog:before {
+ 	content: "\e90b";
+}
+.icon_mist:before {
+ 	content: "\e90b";
+}
+.icon_overcast:before {
+ 	content: "\e90d";
+}
+.icon_isorainrwrsday:before {
+ 	content: "\e910";
+}
+.icon_isosleetswrsday:before {
+ 	content: "\e910";
+}
+.icon_modrain:before {
+ 	content: "\e910";
+}
+.icon_modrainswrsday:before {
+ 	content: "\e910";
+}
+.icon_modsleet:before {
+ 	content: "\e910";
+}
+.icon_modsleetswrsday:before {
+ 	content: "\e910";
+}
+.icon_occlightrain:before {
+ 	content: "\e910";
+}
+.icon_occlightsleet:before {
+ 	content: "\e910";
+}
+.icon_freezingrain:before {
+ 	content: "\e911";
+}
+.icon_heavyrain:before {
+ 	content: "\e911";
+}
+.icon_heavysleet:before {
+ 	content: "\e911";
+}
+.icon_freezingdrizzle:before {
+ 	content: "\e914";
+}
+.icon_isosnowswrsday:before {
+ 	content: "\e914";
+}
+.icon_modsnow:before {
+ 	content: "\e914";
+}
+.icon_modsnowswrsday:before {
+ 	content: "\e914";
+}
+.icon_occlightsnow:before {
+ 	content: "\e914";
+}
+.icon_blizzard:before {
+ 	content: "\e916";
+}
+.icon_heavysnow:before {
+ 	content: "\e916";
+}
+.icon_heavysnowswrsday:before {
+ 	content: "\e916";
+}
+.icon_cloudrainthunder:before {
+ 	content: "\e91a";
+}
+.icon_cloudsnowhunder:before {
+ 	content: "\e91a";
+}
+.icon_isorainswrsnight:before {
+ 	content: "\e921";
+}
+.icon_isosleetswrsnight:before {
+ 	content: "\e921";
+}
+.icon_modrainswrsnight:before {
+ 	content: "\e921";
+}
+.icon_modsleetswrsnight:before {
+ 	content: "\e921";
+}
+.icon_isosnowswrsnight:before {
+ 	content: "\e925";
+}
+.icon_modsnowswrsnight:before {
+ 	content: "\e925";
+}
+.icon_heavysnowswrsnight:before {
+ 	content: "\e926";
+}
+.icon_thermometer:before {
+ 	content: "\e92a";
+}
+.icon_compass:before {
+ 	content: "\e92b";
+}
+.icon_none:before {
+ 	content: "\e92c";
+}
+.icon_Celsius:before {
+ 	content: "\e92d";
+}
+.icon_Fahrenheit:before {
+ 	content: "\e92e";
+}
+.icon_linkedin:before {
+ 	content: "\eac9";
+}
+.icon_spinner:before {
+	font-size: 2.5em;
+	margin-bottom: 10px;
+	content: "\e97c";
+	animation: spinning 5s infinite;
+	
+}

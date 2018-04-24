@@ -1,0 +1,26 @@
+.weather{
+	margin-bottom: 2em;
+	&_location{
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 1.2em;
+		text-align: center;
+		letter-spacing: 2px;
+	}
+	&_current{
+		font-size: 5em;
+		font-weight: 700;
+		text-align: center;
+		margin: .4em 0;
+	}
+	&_desc{
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 1.2em;
+		text-align: center;
+		letter-spacing: 2px;
+	}
+	&_celsious{
+		font-size: .5em;
+	}
+}

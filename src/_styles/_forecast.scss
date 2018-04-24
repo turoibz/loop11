@@ -1,0 +1,53 @@
+.fcst{
+	display: flex;
+	margin-bottom: 2.5em;
+	border-top: 1px solid rgba(255, 255, 255, .15);
+	border-bottom: 1px solid rgba(255, 255, 255, .15);
+	padding: 10px 0;
+	&_h{
+		text-transform: uppercase;
+		font-size: .8em;
+		text-align: center;
+	}
+	&_today{
+		width: 20%;
+		text-align: center;
+		&_hr{
+			text-transform: uppercase;
+			font-weight: 300;
+			margin: .5em 0;
+			font-size: .7em;
+		}
+		&_temp{
+			font-size: 1em;
+			margin: .5em 0;
+		}
+	}
+	&_tomorrow{
+		margin-bottom: 2.5em;
+		text-align: center;
+		&_temp{
+			font-size: 1.6em;
+			font-weight: 700;
+			margin: 0;
+			padding: 1em 0;
+			border-bottom: 1px solid rgba(255, 255, 255, .15);	
+		}
+		&_desc{
+			margin: .5em;
+			text-transform: uppercase;
+		}
+	}
+	&_week{
+		margin-bottom: 2em;
+		&_item{
+			display: flex;
+			justify-content: space-between;
+			border-bottom: 1px solid rgba(255, 255, 255, .15);
+			&:last-child{
+				border: none;
+			}
+		}
+		
+	}
+}

@@ -1,0 +1,36 @@
+.tab_nav{
+	margin: 0;
+	padding: 1em 0;
+	display: flex;
+	justify-content: space-between;
+	&_item{
+		list-style-type: none;
+	}
+	&_link{
+		color: #787878;
+		&:after{
+			display: block;
+			content: "";
+			height: 2px;
+			width: 0%;
+			margin-top: 1px;
+			background: #787878;
+			@include transition(all .25s ease);
+		}
+		&.active{
+			color: #FFFFFF;
+			@include transition(all .25s ease);
+			&:after{
+				width: 100%;
+				background: #FFFFFF;
+				@include transition(all .25s ease);
+			}
+		}
+		&:hover{
+			&:after{
+				width: 100%;
+				@include transition(all .25s ease);
+			}			
+		}
+	}
+}

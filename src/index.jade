@@ -1,0 +1,49 @@
+extends _layouts/base
+
+
+block content
+	header.container
+		nav
+			ul.tab_nav
+				li.tab_nav_item
+					a.tab_nav_link(href="/#/melbourne") Melbourne
+				li.tab_nav_item
+					a.tab_nav_link(href="/#/sydney") Sydney
+				li.tab_nav_item
+					a.tab_nav_link(href="/#/brisbane") Brisbane
+	section.container(ng-controller="weatherCtrl")
+		h1.weather_location {{weather.location}}
+		.loading(ng-if="weather.loading")
+			p.loader.icon_spinner Loading...
+		.display(ng-if="!weather.loading")
+			.weather
+				p.weather_current(class="icon_{{weather.current.wx_icon | icon}}") {{weather.current.temp_c}}
+					span.weather_celsious  ºC
+				p.weather_desc {{weather.current.wx_desc}}
+			.fcst
+				.fcst_today(ng-repeat="item in weather.forecast[0].Timeframes")
+					p.fcst_today_hr {{item.time | times}}
+					p.fcst_today_temp(class="icon_{{item.wx_icon | icon}}") {{item.temp_c}}
+						span.weather_celsious  ºC
+			.fcst_tomorrow
+				h2.fcst_h Tomorrow
+				.row
+					.half
+						p.fcst_tomorrow_temp {{weather.forecast[1].temp_max_c}}
+							span.weather_celsious  ºC / MAX
+					.half
+						p.fcst_tomorrow_temp {{weather.forecast[1].temp_min_c}}
+							span.weather_celsious  ºC / MIN
+			.fcst_week
+				h2.fcst_h Rest of the Week
+				.fcst_week_item
+					p.fcst_week_day DAY
+					p.fcst_week_min-max MAX / MIN
+				.fcst_week_item(ng-repeat="item in weather.forecast | limitTo : 5 : 2")
+					p.fcst_week_day {{item.date}}
+					p.fcst_week_min-max {{item.temp_max_c}} ºC / {{item.temp_min_c}} ºC
+	footer.container
+		p Developed by 
+			a(href="http://arturoibanez.com/" target="_blank") Arturo Ibanez
+		p
+			a.icon_linkedin(href="https://www.linkedin.com/in/arturo-ibanez-ixd/" target="_blank")
