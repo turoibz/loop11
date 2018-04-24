@@ -18,12 +18,15 @@ Structure
     └── index.jade (index file of the app)
 ```
 Installation:
+
 npm install
 
-Run app
+Run app:
+
 gulp serve
 
-URL
+URL:
+
 http://localhost:3000/
 
 ## Technologies used
