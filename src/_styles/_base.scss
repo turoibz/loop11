@@ -11,6 +11,11 @@ a{
 .loader{
 	text-align: center;
 	margin-top: 4.5em;
+	min-height: 80vh;
+	img{
+		width: 200px;
+		height: auto;
+	}
 }
 .row{
 	display: flex;

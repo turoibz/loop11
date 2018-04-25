@@ -6,15 +6,16 @@ block content
 		nav
 			ul.tab_nav
 				li.tab_nav_item
-					a.tab_nav_link(href="/#/melbourne") Melbourne
+					a.tab_nav_link(href="#/melbourne") Melbourne
 				li.tab_nav_item
-					a.tab_nav_link(href="/#/sydney") Sydney
+					a.tab_nav_link(href="#/sydney") Sydney
 				li.tab_nav_item
-					a.tab_nav_link(href="/#/brisbane") Brisbane
+					a.tab_nav_link(href="#/brisbane") Brisbane
 	section.container(ng-controller="weatherCtrl")
 		h1.weather_location {{weather.location}}
 		.loading(ng-if="weather.loading")
-			p.loader.icon_spinner Loading...
+			p.loader
+				img(src="../images/day.svg")
 		.display(ng-if="!weather.loading")
 			.weather
 				p.weather_current(class="icon_{{weather.current.wx_icon | icon}}") {{weather.current.temp_c}}
@@ -46,4 +47,4 @@ block content
 		p Developed by 
 			a(href="http://arturoibanez.com/" target="_blank") Arturo Ibanez
 		p
-			a.icon_linkedin(href="https://www.linkedin.com/in/arturo-ibanez-ixd/" target="_blank")
+			a.icon_linkedin(href="https://www.linkedin.com/in/arturo-ibanez-ixd/" target="_blank") Connect with me

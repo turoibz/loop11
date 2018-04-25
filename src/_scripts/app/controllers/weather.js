@@ -23,21 +23,21 @@ angular.module("app.controllers")
 				$scope.weather.postCode = "au.3000"
 				//using jQuery
 				$('.tab_nav_link').removeClass('active')
-				$('a[href$="/#/melbourne"]').addClass('active')
+				$('a[href$="#/melbourne"]').addClass('active')
 				break;
 			case "/sydney":
 				$scope.weather.location = "Sydney"
 				$scope.weather.postCode = "au.2000"
 				//using jQuery
 				$('.tab_nav_link').removeClass('active')
-				$('a[href$="/#/sydney"]').addClass('active')
+				$('a[href$="#/sydney"]').addClass('active')
 				break;
 			case "/brisbane":
 				$scope.weather.location = "Brisbane"
 				$scope.weather.postCode = "au.4000"
 				//using jQuery
 				$('.tab_nav_link').removeClass('active')
-				$('a[href$="/#/brisbane"]').addClass('active')
+				$('a[href$="#/brisbane"]').addClass('active')
 				break;
 			default:
 				$scope.weather.location = "Melbourne"
